@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -75,7 +76,9 @@ public class OfferServiceTest {
 			offerModel.setClient(newClient);
 			offerModel.setImmobile(immobile);
 			offerModel.setOfferStatus(OfferStatus.SCHEDULE_VISIT);
-			return offerModel;
+			List<OfferModel> list = new ArrayList<>();
+			list.add(offerModel);			
+			return list;
 		});
 		List<OfferModel> offerModel = this.offerService.findByClientId(clientId);
 		assertThat(offerModel).isNotNull();
@@ -129,7 +132,9 @@ public class OfferServiceTest {
 			offerModel.setClient(newClient);
 			offerModel.setImmobile(immobile);
 			offerModel.setOfferStatus(OfferStatus.SCHEDULE_VISIT);
-			return offerModel;
+			List<OfferModel> list = new ArrayList<>();
+			list.add(offerModel);
+			return list;
 		});
 		List<OfferModel> offerModel = this.offerService.findByEmail(email);
 		assertThat(offerModel).isNotNull();		

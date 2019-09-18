@@ -1,6 +1,10 @@
 insert into ACCOUNT_TYPE(ID, NAME) values (1, 'BUSINESS')
 insert into ACCOUNT_TYPE(ID, NAME) values (2, 'INDIVIDUAL')
 
+insert into RISK_FACTOR_THRESHOLD(THRESHOLD, RISK_TYPE, ACCOUNT_TYPE_ID) values(0, 'LOW', 1)
+
+insert into ACCOUNTTYPE_THRESHOLD(ACCOUNT_TYPE_ID)values(1) 
+
 insert into CLIENT_MODEL (ID, EMAIL, NAME, BORN_DATE, WAGE ) values (100000, 'ricardo@teste.com.br', 'Ricardo Sarto', '1982-09-15', 12000)
 insert into CLIENT_MODEL (ID, EMAIL, NAME, BORN_DATE, WAGE ) values (100001, 'marina@teste.com.br', 'Marina', '2000-02-20', 15000)
 insert into CLIENT_MODEL (ID, EMAIL, NAME, BORN_DATE, WAGE ) values (100002, 'william@teste.com.br', 'William', '1999-02-20', 13000)

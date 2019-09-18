@@ -22,7 +22,8 @@ import lombok.NoArgsConstructor;
 @IdClass(value = RiskFactorThreshold.RiskFactorThresholdId.class)
 @AllArgsConstructor
 @NoArgsConstructor
-public class RiskFactorThreshold implements Serializable {
+@Data
+public class RiskFactorThreshold {
 	
 	@Id
 	@OneToOne

@@ -22,7 +22,7 @@ public class ImmobileController {
 		this.immobileService = immobileService;
 	}
 	
-	@GetMapping("immobilie")
+	@GetMapping("/immobilie")
 	public ResponseEntity<List<Immobile>> getAll(){
 		List<Immobile> immobilieList = this.immobileService.getAll();
 		return new ResponseEntity<List<Immobile>>(immobilieList, HttpStatus.OK);

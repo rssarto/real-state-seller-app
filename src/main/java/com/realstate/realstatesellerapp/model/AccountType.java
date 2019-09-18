@@ -1,25 +1,22 @@
 package com.realstate.realstatesellerapp.model;
 
-import java.io.Serializable;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name= "ACCOUNT_TYPE")
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-public class AccountType implements Serializable {
+@Data
+public class AccountType{
 	
 	@Id
 	@GeneratedValue
@@ -27,7 +24,7 @@ public class AccountType implements Serializable {
 	
 	private String name;
 	
-    @OneToOne(mappedBy = "accountType", cascade = CascadeType.ALL)
-    private AccountType_Threshold accountTypeThreshold;	
+//    @OneToOne(mappedBy = "accountType", cascade = CascadeType.ALL)
+//    private AccountType_Threshold accountTypeThreshold;	
 
 }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.realstate.realstatesellerapp.model.AccountType_Threshold;
 
-@Repository
-public interface AccountTypeThresholdRepository extends CrudRepository<AccountType_Threshold, Long> {
+//@Repository
+public interface AccountTypeThresholdRepository /*extends CrudRepository<AccountType_Threshold, Long>*/ {
 
 }

@@ -19,15 +19,15 @@ import com.realstate.realstatesellerapp.repository.AccountTypeThresholdRepositor
 @RequestMapping(value="/api/v1")
 public class AccountTypeController {
 	
-	@Autowired
-	private AccountTypeThresholdRepository accountTypeThresholdRepository;
+//	@Autowired
+//	private AccountTypeThresholdRepository accountTypeThresholdRepository;
 	
-	@GetMapping("/thresholds")
-	public ResponseEntity<List<AccountType_Threshold>> listAll(){
-		Iterable<AccountType_Threshold> findAll = this.accountTypeThresholdRepository.findAll();
-		final List<AccountType_Threshold> results = new ArrayList<>();
-		findAll.forEach(action -> results.add(action));
-		return new ResponseEntity<List<AccountType_Threshold>>(results, HttpStatus.OK);
-	}
+//	@GetMapping("/thresholds")
+//	public ResponseEntity<List<AccountType_Threshold>> listAll(){
+//		Iterable<AccountType_Threshold> findAll = this.accountTypeThresholdRepository.findAll();
+//		final List<AccountType_Threshold> results = new ArrayList<>();
+//		findAll.forEach(action -> results.add(action));
+//		return new ResponseEntity<List<AccountType_Threshold>>(results, HttpStatus.OK);
+//	}
 
 }
